@@ -7,8 +7,13 @@
  </head>
  <body>
  <?php 
-    writeUsers();
+    writeHello("Vladislav");
+    writeUsers("Юзер второй");
  ?>
  </body>
 </html>
+
+
+
+
 
