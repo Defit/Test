@@ -1,3 +1,4 @@
+<?php include_once './db_test.php';?>
 ﻿<!DOCTYPE html>
 <html>
  <head>
@@ -6,7 +7,8 @@
  </head>
  <body>
  <?php 
-    echo '<p>Тест прошёл</p>' 
+    writeUsers();
  ?>
  </body>
 </html>
+
