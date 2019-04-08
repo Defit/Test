@@ -1,28 +1,32 @@
 <?php
-
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/*$factorial = */function factorial($num){
-    $result = 1;
-    if($num > 1){
-        return factorial($num - 1) * $num;
-    }else{
-        return $result;
+class Fact{
+    public function __invoke($num) {
+        $result = 1;
+        if($num > 1){
+            $result = $this($num - 1) * $num;
+            return $result;
+        }else{
+            return $result;
+        }
     }
-};
+}
 
 function arr_factorial($arr){
-    return array_map($factorial, $arr);
+    $f = new Fact;
+    return array_map($f, $arr);
 }
 
 
-$res= null;
-$res = arr_factorial(range(3, 7));
-echo factorial(5);
+
+
+
+
+
+
+
+
+
+
 
 
 
