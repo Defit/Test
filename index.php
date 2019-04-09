@@ -2,6 +2,7 @@
 <?php include_once './classA.php';?>
 <?php include_once './cloneTest.php';?>
 <?php include_once './callback_test.php';?>
+<?php include_once './word_creatorTest.php';?>
 ﻿<!DOCTYPE html>
 <html>
  <head>
@@ -28,11 +29,14 @@
     echo implode(' ', $res)."<br>";
     
     echo '<br><br> TEST NEXT : <br>';
-    
+    $doc = new Word;
+    $doc->generateWord();
     
  ?>
  </body>
 </html>
+
+
 
 
 
