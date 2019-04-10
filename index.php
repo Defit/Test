@@ -28,13 +28,14 @@
     $res =  arr_factorial(range(3, 7));
     echo implode(' ', $res)."<br>";
     
-    echo '<br><br> TEST NEXT : <br>';
+    echo '<br><br> TEST WORD : <br>';
     $doc = new Word;
     $doc->generateWord();
     
  ?>
  </body>
 </html>
+
 
 
 
